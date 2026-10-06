@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #F4F6F9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #D6E0EA;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #1E3F5A;
+}
+
+.btn-deconnexion {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #D6E0EA;
+    background: white;
+    cursor: pointer;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.retour {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #6B8299;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #D6E0EA;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #1E3F5A;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #1E3F5A;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D6E0EA;
+    border-radius: 8px;
+    background: #FAFBFC;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #1E3F5A;
+    background: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    background: #1E3F5A;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+.btn-submit:hover {
+    background: #2C5F8A;
+}
+
+.message-error {
+    background: #FDF0EF;
+    color: #C0392B;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #6B8299;
+    font-size: 0.8rem;
+}

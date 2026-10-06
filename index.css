@@ -1,0 +1,206 @@
+/* =====================================================
+   INDEX.CSS — Gestion des Dictées
+   Style de la page de connexion
+===================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #ECECEC;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =====================================================
+   MISE EN PAGE PRINCIPALE
+===================================================== */
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+/* =====================================================
+   CÔTÉ GAUCHE
+===================================================== */
+
+.left {
+  background: #274C63;
+  color: white;
+  width: 45%;
+  padding: 80px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.uga {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+.main-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 500px;
+  opacity: 0.9;
+}
+
+/* =====================================================
+   CÔTÉ DROIT
+===================================================== */
+
+.right {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #F2F2F2;
+  padding: 60px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 3px 20px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: #1E3F5A;
+}
+
+/* =====================================================
+   LABELS ET CHAMPS
+===================================================== */
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #D0D0D0;
+  margin-bottom: 25px;
+  background: #E9E9E9;
+}
+
+/* =====================================================
+   BOUTONS
+===================================================== */
+
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  background: #2F4E65;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background: #3B637F;
+}
+
+.btn-register {
+  width: 100%;
+  padding: 14px;
+  background: #4C8F84;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-register:hover {
+  background: #5FA59B;
+}
+
+/* =====================================================
+   SÉPARATEUR ET LIENS
+===================================================== */
+
+.forgot {
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+  color: #2F4E65;
+  text-decoration: underline;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 25px 0;
+  color: #777;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #CCC;
+}
+
+.separator span {
+  padding: 0 15px;
+}
+
+/* =====================================================
+   MESSAGES
+===================================================== */
+
+.hint {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.error {
+  color: #C0392B;
+  display: none;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+}
+
+/* =====================================================
+   PIED DE PAGE
+===================================================== */
+
+footer {
+  background: white;
+  border-top: 1px solid #D6E0EA;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.78rem;
+  color: #6B8299;
+  line-height: 1.8;
+}

@@ -1,0 +1,261 @@
+/* =====================================================
+   RESULTATS.CSS — Gestion des Dictées
+   Style de la page des résultats
+===================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #F4F6F9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =====================================================
+   EN-TÊTE
+===================================================== */
+
+header {
+  background: white;
+  border-bottom: 1px solid #D6E0EA;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #1E3F5A;
+}
+
+.bonjour {
+  color: #6B8299;
+  font-size: 0.95rem;
+}
+
+.btn-deconnexion {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #D6E0EA;
+  background: white;
+  color: #6B8299;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-deconnexion:hover {
+  background: #F4F6F9;
+}
+
+/* =====================================================
+   CONTENU PRINCIPAL
+===================================================== */
+
+main {
+  flex: 1;
+  padding: 40px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.top h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #1E3F5A;
+}
+
+/* =====================================================
+   BOUTONS
+===================================================== */
+
+button {
+  cursor: pointer;
+}
+
+.btn-export {
+  background: #3D8C84;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.btn-export:hover {
+  background: #4AADA4;
+}
+
+.btn-search {
+  background: #1E3F5A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.btn-search:hover {
+  background: #2C5F8A;
+}
+
+.btn-reset {
+  background: white;
+  color: #6B8299;
+  border: 1px solid #D6E0EA;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.btn-reset:hover {
+  background: #F4F6F9;
+}
+
+/* =====================================================
+   FILTRES
+===================================================== */
+
+.filters {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 12px;
+  border: 1px solid #D6E0EA;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-group label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.filters select,
+.filters input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #D6E0EA;
+  background: #F4F6F9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+}
+
+.filters select:focus,
+.filters input:focus {
+  outline: none;
+  border-color: #2C5F8A;
+  background: white;
+}
+
+.filter-actions {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+/* =====================================================
+   TABLEAU DES RÉSULTATS
+===================================================== */
+
+.table-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #D6E0EA;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 15px;
+  background: #F0F3F7;
+  font-size: 0.9rem;
+  color: #1E3F5A;
+}
+
+td {
+  padding: 15px;
+  border-top: 1px solid #E5EDF5;
+  font-size: 0.9rem;
+}
+
+/* =====================================================
+   PIED DE PAGE
+===================================================== */
+
+footer {
+  background: white;
+  border-top: 1px solid #D6E0EA;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.78rem;
+  color: #6B8299;
+  line-height: 1.8;
+}
+
+/* =====================================================
+   LIEN RETOUR
+===================================================== */
+
+.retour {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #1E3F5A;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.retour:hover {
+  text-decoration: underline;
+}
+
+/* =====================================================
+   CELLULES TABLEAU
+===================================================== */
+
+.error {
+  color: #C0392B;
+  font-weight: 500;
+}
+
+.dictee {
+  max-width: 200px;
+  word-wrap: break-word;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.analyse {
+  max-width: 250px;
+  word-wrap: break-word;
+  font-size: 0.82rem;
+  color: #444;
+  white-space: pre-wrap;
+}

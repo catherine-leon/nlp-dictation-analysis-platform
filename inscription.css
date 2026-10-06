@@ -1,0 +1,189 @@
+/* =====================================================
+   INSCRIPTION.CSS — Gestion des Dictées
+   Style de la page de création de compte
+===================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #ECECEC;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =====================================================
+   ZONE PRINCIPALE
+===================================================== */
+
+.page {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* =====================================================
+   CARTE DU FORMULAIRE
+===================================================== */
+
+.card {
+  background: #F2F2F2;
+  padding: 50px 45px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 3px 20px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* =====================================================
+   BOUTON FERMER
+===================================================== */
+
+.btn-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: #6B8299;
+  cursor: pointer;
+}
+
+.btn-close:hover {
+  color: #1E3F5A;
+}
+
+/* =====================================================
+   TITRE
+===================================================== */
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #1E3F5A;
+  margin-bottom: 30px;
+}
+
+/* =====================================================
+   LABELS ET CHAMPS
+===================================================== */
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #D0D0D0;
+  margin-bottom: 20px;
+  background: #E9E9E9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.95rem;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2C5F8A;
+  background: white;
+}
+
+/* =====================================================
+   CHAMP INSTITUTION — visible seulement pour chercheur
+===================================================== */
+
+.institution-group {
+  display: none;
+}
+
+/* =====================================================
+   MESSAGES
+===================================================== */
+
+.erreur {
+  color: #C0392B;
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+}
+
+.succes {
+  color: #27AE60;
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+}
+
+.succes a {
+  color: #1E3F5A;
+  text-decoration: underline;
+}
+
+/* =====================================================
+   BOUTONS
+===================================================== */
+
+.actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.btn-annuler {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #D0D0D0;
+  border-radius: 8px;
+  background: white;
+  color: #6B8299;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.btn-annuler:hover {
+  background: #F4F6F9;
+}
+
+.btn-inscrire {
+  flex: 2;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #3D8C84;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-inscrire:hover {
+  background: #4AADA4;
+}
+
+/* =====================================================
+   PIED DE PAGE
+===================================================== */
+
+footer {
+  background: white;
+  border-top: 1px solid #D6E0EA;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.78rem;
+  color: #6B8299;
+  line-height: 1.8;
+}
